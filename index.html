@@ -57,28 +57,24 @@
         >
           <iframe
             style="border: none;"
-            srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+            srcdoc="<body><script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
             <script>
-              window.botpressWebChat.init({
-                  'composerPlaceholder': 'Talk to me',
-                  'botConversationDescription': 'I'll help you eat well',
-                  'botName': 'Chef Jean-Pol',
-                  'botId': '9ab1ca2f-1f66-481d-a1fc-1e93989582a4',
-                  'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
-                  'messagingUrl': 'https://messaging.botpress.cloud',
-                  'clientId': '9ab1ca2f-1f66-481d-a1fc-1e93989582a4',
-                  'enableConversationDeletion': true,
-                  'showPoweredBy': true,
-                  'className': 'webchatIframe',
-                  'containerWidth': '100%25',
-                  'layoutWidth': '100%25',
-                  'hideWidget': true,
-                  'showCloseButton': false,
-                  'disableAnimations': true,
-                  'closeOnEscape': false,
-                  'showConversationsButton': false,
-                  'enableTranscriptDownload': false,
-                  'stylesheet':'https://webchat-styler-css.botpress.app/prod/3d9629ee-8f58-46d3-b6c3-45143dddc23a/v27825/style.css'
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "9ab1ca2f-1f66-481d-a1fc-1e93989582a4",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "9ab1ca2f-1f66-481d-a1fc-1e93989582a4",
+      "lazySocket": true,
+      "frontendVersion": "v1",
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      'stylesheet':'https://webchat-styler-css.botpress.app/prod/3d9629ee-8f58-46d3-b6c3-45143dddc23a/v27825/style.css'
+
+  });
+</script>
                   
               });
             window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
